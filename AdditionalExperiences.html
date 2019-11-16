@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Additional Experiences</title>
+	
+	<style>
+		
+	body, html {
+  height: 100%;
+}
+	
+
+		/*NAVIGATION BAR*/
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+		/*HEADER*/
+		
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}	
+	
+	* {
+  box-sizing: border-box;
+}
+				
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1537655226665-44b4f7ad2351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+		
+		/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 1px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+		/*BODY*/
+		
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+		
+		/*TITLES*/
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+		
+}
+		h2 {
+  font-size: 25px;
+ color: black;
+			text-align: center;
+  word-break: break-all;
+		
+}
+
+	
+/*PRESENTATION CARDS*/
+/* Create two equal columns that floats next to each other */
+.column{
+  width: 50%;
+  padding: 10px;
+  height: 400px;
+  text-align: justify;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+	
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+	
+img {
+	height:350px;
+	width:200px;
+	
+}	
+.title {
+  color: grey;
+  font-size: 18px;
+  font-style:italic;
+}
+.col-lg-6.col-md-12 a:link, .col-lg-6.col-md-12 a:visited {
+  background-color: black;
+  color: white;
+  padding: 3px 225px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.col-lg-6.col-md-12 a:hover, .col-lg-6.col-md-12 a:active {
+  background-color: red;
+}
+	
+/*FOOTER*/
+.footer {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  text-align: center;
+  opacity:0.5;
+	
+}
+div#colomn1 {
+	float: left;
+	left: 100px;
+	width: 160px;
+	margin-right: 100px;
+	background-color: transparent;
+}
+div#colomn2 {
+	float: right;
+	width: 200px;
+	margin-left: 100px;
+	color: black;
+	vertical-align:middle;
+	line-height: 70px;	
+}
+div#center {
+	overflow: hidden;
+	text-align:inherit;
+	color: black;
+	vertical-align:middle;
+	text-align:center;
+	line-height: 70px;
+}
+.avatar {
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.left, .right {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+/* RESPONSIVENESS. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+     
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 31.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  
+ 
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+	
+	/* PADDING BETWEEN EACH COLUMN */
+
+.row {
+  padding: 8px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+	
+	.col-lg-6.col-md-12 {
+  padding: 16px;
+	}	
+
+
+	</style>
+</head>
+
+<body>
+	
+	<div class="topnav">
+  <a class="active" href="HomePage.html">Home</a>
+  <a href="Education.html">Education</a>
+  <a href="WorkExperience.html">Work Experience</a>
+  <a href="Skills.html">Skills</a>
+  <a href="Additional Experiences.html">Additional Experiences</a>
+</div>
+	
+
+	<br><br><br>
+<div class="bg-image"></div>
+		
+	
+<div class="bg-text">
+  <h1> Additional Experiences</h1>
+
+</div>
+	<br>
+	<br> <h2> EXPLORE MY OTHER EXPERIENCES </h2>
+	
+	<br> <br>
+	
+	<div class="row">	
+<div class="col-lg-6 col-md-12">
+	<div class="card">
+  		<img src="http://lagaredusud.com/images/kiosques/emilieandthecoolkids03.jpg" alt="Emilie and the cool kids" style="width:100%">
+ 		<h3> <br> Hackathon <br>Emilie and the Cool Kids x EDHEC Business School</h3>
+  		<br> <p class="title">Winning team over 7 groups of 25 people</p>
+  		<br> <p> Working on customers loyalty strategy </p>
+ 	<div style="margin: 24px 0;">
+    <a href="http://emiliescookies.com/fr_FR/" target="_blank">More info</a>
+  </div> 
+</div>
+</div>
+
+<div class="col-lg-6 col-md-12">
+	<div class="card">
+  		<img src="https://media.glassdoor.com/l/eb/44/dd/bd/technopole.jpg" alt="Bouygues Telecom" style="width:100%">
+		<h3><br> Hackathon <br> Bouygues Telecom x EPITECH x EDHEC</h3>
+  		<br> <p class="title"> 11 teams of 8 people</p>
+  		<br> <p>Working on Bouygue’s issues and deployment of a prototype </p>
+  	<div style="margin: 24px 0px;">
+   <a href="https://www.bouyguestelecom.fr" target="_blank">More info</a>
+  </div>
+</div>
+</div>	
+	
+
+	
+<div class="col-lg-6 col-md-12">
+	<div class="card">
+  		<img src="https://www.magic.fr/wp-content/uploads/2019/03/orange-fibre-optique.jpg" alt="Orange" style="width:100%">
+		<h3> <br> Hackathon <br> Orange Business x EDHEC Business School</h3>
+  		<br> <p class="title">Winning team over 30 projects - Presented internally to the Orange's innovation director </p>
+  		<br> <p>Development of an AI project for a chosen industry</p>
+  	<div style="margin: 24px 0px;">
+   <a href="https://www.orange-business.com/fr" target="_blank">More info</a>
+  </div>
+</div>
+</div>	
+	
+<div class="col-lg-6 col-md-12">
+	<div class="card">
+  		<img src="http://www.webtimemedias.com/sites/files/images/articles/old/file7476.jpg" alt="Eveil" style="width:100%">
+		<h3> <br> Eveil Non Profit Organization </h3>
+  		<br> <p class="title">5000€ raised and redistributed to an official organisation</p> <br>
+		<ul> <p> Organising events (Lotto, Tombola, Sandcastle Competition) <br>
+			&nbsp; <br>
+				Creation of flyers, posters and promotional videos: press solicitation </p>
+			<br>
+		</ul>
+   <a href="https://www.edhec.edu/fr/news/les-etudiants-du-bba-edhec-ont-du-coeur" target="_blank">More info</a>
+  </div>
+</div>
+</div>
+
+	
+	
+&nbsp;
+<div><br><br><br><br><br><br><br><br><br><br> &nbsp;
+	</div>
+<div>&nbsp;  
+	</div>
+<div>&nbsp;  
+</div>
+<div>&nbsp;
+	</div>
+	
+<div class="footer">
+  <div id="colomn1">
+  	<img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.15752-9/p1080x2048/75481682_1350799838423182_7554892042539630592_n.jpg?_nc_cat=102&_nc_oc=AQldIVMWAAn_GmHgB5mPlcGQF8VOAIE3nZuSTvIsZ4o0MnNQEM4tZ2mOgafZ7D64MiA&_nc_ht=scontent-cdt1-1.xx&oh=de68090d4c03c9c608bee7aa3007ec70&oe=5E436012" alt="LeaPicture" width="100" height="100" class="avatar"></div>
+	<div id="colomn2">+33 6 68 42 77 53 </div>
+	<div id="center">You want to know more about me ? Contact me at lea.fedida.bba@edhec.com</div>
+</div> 
+	  
+
+</body>
+</html>

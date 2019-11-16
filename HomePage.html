@@ -1,0 +1,437 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home Page</title>
+	
+	<style>
+		
+		body, html {
+  height: 100%;
+}
+		
+
+		/*NAVIGATION BAR*/
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #FFFFFF;
+  color: black;
+}
+/*HEADER*/
+		
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}	
+	
+	* {
+  box-sizing: border-box;
+}
+		
+.bg-image {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1537655226665-44b4f7ad2351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+		
+		/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 1px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+		
+	/*BODY*/	
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+		
+/*TITLES*/
+		
+h2{
+  font-size: 150%;
+  text-align: center;
+  color: black;
+  vertical-align: middle;
+}
+	
+h3{
+  font-size: 130%;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  color: black;
+  align-content: center;
+  opacity:0.8;
+  line-height:50px;
+}
+	
+/********** OVERLAY Image **********/
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+.main-title{
+  color: #2d2d2d;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.7em 0;
+}
+	
+
+	
+/********** Style title images **********/
+.col-lg-6.col-md-12 .title{
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.content {
+  position: relative;
+  width: 150%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.content:hover .content-overlay{
+  opacity: 1;
+}
+.content-image{
+  width: 100%;
+}
+.content-details {
+  position: absolute;
+  text-align:center;
+  color:lightgrey;
+  font-size:30px;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;}	
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}	
+	
+
+/*FOOTER*/
+.footer {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  text-align: center;
+  opacity:0.5;
+}
+div#colomn1 {
+	float: left;
+	left: 100px;
+	width: 160px;
+	margin-right: 100px;
+	background-color: transparent;
+}
+div#colomn2 {
+	float: right;
+	width: 200px;
+	margin-left: 100px;
+	color: black;
+	vertical-align:middle;
+	line-height: 70px;	
+}
+div#center {
+	overflow: hidden;
+	text-align:inherit;
+	color: black;
+	vertical-align:middle;
+	line-height: 70px;
+}
+.avatar {
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+
+	/*RESPONSIVENESS*/
+
+		.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 950px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+		
+		
+		
+		/* Add padding BETWEEN each column (if you want) */
+
+.row {
+  padding: 8px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+	
+	.col-lg-6.col-md-12 {
+  padding: 16px;
+	}	
+
+	</style>
+</head>
+
+<body>
+	
+	<div class="topnav">
+  <a class="active" href="HomePage.html">Home</a>
+  <a href="Education.html">Education</a>
+  <a href="WorkExperience.html">Work Experience</a>
+  <a href="Skills.html">Skills</a>
+  <a href="AdditionalExperiences.html">Additional Experiences</a>
+</div>
+	<br><br><br>
+<div class="bg-image"></div>
+		
+	<div class="bg-text">
+  <h1>I am Lea Fedida</h1>
+&nbsp;
+  <h3>This is my Resume</h3>
+<br>
+  <p>And I am looking for a 6 months internship starting in January 2020 in Strategy Consulting</p>
+</div>
+	
+<div> <h2 class="main-title">LET'S GET TO KNOW ME...</h2>
+</div>
+	<br>
+
+	
+<div class="col-lg-6 col-md-12">
+  <div class="content">
+    <a href="Education.html" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Education">
+      <div class="content-details fadeIn-bottom">
+        <h4 class="content-title">Education</h4>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="col-lg-6 col-md-12">
+  <div class="content">
+    <a href="WorkExperience.html" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="WorkExperience">
+      <div class="content-details fadeIn-top">
+        <h4>Work Experience</h4>
+		</div>
+    </a>
+  </div>
+</div>
+
+<div class="col-lg-6 col-md-12">
+  <div class="content">
+    <a href="Skills.html" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Skills">
+      <div class="content-details fadeIn-left">
+        <h4>Skills</h4>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="col-lg-6 col-md-12">
+  <div class="content">
+    <a href="AdditionalExperiences.html" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="https://images.unsplash.com/photo-1413919873593-061d76ec8452?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" alt="AdditionalExperiences">
+      <div class="content-details fadeIn-right">
+        <h4>Additional Experiences</h4>
+      </div>
+    </a>
+  </div>
+</div>
+	
+&nbsp;
+<div>
+	</div>
+&nbsp;
+<div><br>
+	</div>
+<div>&nbsp;  
+	</div>
+	
+<div class="footer">
+  <div id="colomn1">
+  	<img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.15752-9/p1080x2048/75481682_1350799838423182_7554892042539630592_n.jpg?_nc_cat=102&_nc_oc=AQldIVMWAAn_GmHgB5mPlcGQF8VOAIE3nZuSTvIsZ4o0MnNQEM4tZ2mOgafZ7D64MiA&_nc_ht=scontent-cdt1-1.xx&oh=de68090d4c03c9c608bee7aa3007ec70&oe=5E436012" alt="LeaPicture" width="100" height="100" class="avatar"></div>
+	<div id="colomn2">+33 6 68 42 77 53 </div>
+	<div id="center">You want to know more about me ? Contact me at lea.fedida.bba@edhec.com</div>
+</div> 	  
+</body>
+</html>

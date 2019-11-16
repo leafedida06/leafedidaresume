@@ -1,0 +1,473 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Work experience</title>
+	
+<style>
+	
+body, html {
+  height: 100%;    }
+	
+	
+		/*NAVIGATION BAR*/
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+	/*HEADER*/
+	
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}	
+	
+	* {
+  box-sizing: border-box;
+}
+	
+	.bg-image {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1537655226665-44b4f7ad2351?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+		
+		/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 1px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+	/*BODY*/
+		
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: 8px;
+}
+
+	
+/* Clear floats after rows */ 
+.row:after {
+  align-content: center;
+	padding-bottom: 16px
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.left, .right {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+	/* TITLES AND LINKS  */
+.job{
+	color: black;
+    font-weight: bold;
+	text-align: left;
+	font-size: 30px
+	}
+	
+	h1 {
+  font-size: 50px;
+  word-break: break-all;
+		
+}
+
+h2 {
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  word-break: break-all; }
+	
+h3 {
+  font-size: 25px;
+  color: white;
+  text-align: left;
+  word-break: break-all; }
+	
+a {
+color: black;
+text-decoration: none; }
+
+/* LISTES */
+	
+ul {
+  padding: 20px;
+  text-align: left;
+  list-style:circle;
+	}
+  
+	
+li {
+	font-size: 15px;
+	text-align: left;
+	font-weight: 100;
+    color: white;
+	padding: 10px; }
+	
+
+
+
+	/* CONTAINER */
+
+body {
+  font-family: Arial;
+}
+
+.container {
+  position: relative;
+  border-left-style: dashed
+  max-width: 1000px;
+  margin: 0 ;
+}
+
+.container img {vertical-align: middle;}
+
+	
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+	
+	
+
+	/*FOOTER*/
+	
+	
+.footer {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  text-align: center;
+  opacity:0.5;
+	
+}
+div#colomn1 {
+	float: left;
+	left: 100px;
+	width: 160px;
+	margin-right: 100px;
+	background-color: transparent;
+}
+div#colomn2 {
+	float: right;
+	width: 200px;
+	margin-left: 100px;
+	color: black;
+	vertical-align:middle;
+	line-height: 70px;	
+}
+div#center {
+	overflow: hidden;
+	text-align:inherit;
+	color: black;
+	vertical-align:middle;
+	text-align:center;
+	line-height: 70px;
+}
+.avatar {
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+	/* RESPONSIVENESS. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+	  align-content: center;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 650px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+	
+	/* PADDING BETWEEN EACH COLUMN */
+
+.row {
+    padding: 8px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+	
+	.col-lg-12.col-md-12 {
+    padding-right: 60px;
+	padding-left: 10px;
+		
+	}	
+</style>
+</head>
+
+<body>
+	
+		
+	<div class="topnav">
+  <a class="active" href="HomePage.html">Home</a>
+  <a href="Education.html">Education</a>
+  <a href="WorkExperience.html">Work Experience</a>
+  <a href="Skills.html">Skills</a>
+  <a href="Additional Experiences.html">Additional Experiences</a>
+</div>
+	
+	<br><br><br>
+<div class="bg-image"></div>
+		
+	
+<div class="bg-text">
+  <h1> Work experience</h1>
+
+</div>
+	<br>
+	<br> <h2> Here are my experiences ...</h2>
+	
+    &nbsp;<br> <br>
+		<div class="row">	
+<div class="col-lg-12 col-md-12">
+	<div class="job"><a href="https://www.accenture.com/us-en"><p>Accenture - Paris, France</p> </a>
+           <br></div>
+	<div class="container">
+	<div>
+       <a href="https://www.accenture.com/us-en"><img src="http://www.fabricedusapin.fr/files/projets/photospaceprincipale/15a3482a-7d9a-410b-a6f5-1709344c32d4/1920x800_axe-e44xt03_1519816329.jpg" alt="Accenture" style="width:100%"></a>
+	   
+       <div class="content">
+		   <h3>Incoming Consulting Intern</h3> 		
+       <br>
+		 <p>
+	     <ul>   
+		 <li> Analysis of clients’ issues, animation of workshops and collection of their needs</li>
+		 <li> Participation to the different stages of the solution’s deployment and establishment of performance indicators</li> 
+		</ul>
+	   </p>
+       </div>
+		</div>
+   </div>
+	</div>
+	
+	<div><br></div>
+	
+	&nbsp;<br> <br> <br>
+		
+<div class="col-lg-12 col-md-12">
+	<div class="job"><a href="https://www.publicislive.com/"> <p> Publicislive - Paris, France</p> </a>
+           <br></div>
+	<div class="container">
+       <a href="https://www.publicislive.com/"><img src="https://www.publicislive-paris.com/media/3232/pxsmSQ.gif" alt="PublicisLive" style="width:100%"></a>
+	   
+       <div class="content">
+		   <h3>Strategic Planning Intern</h3> 		
+       <br>
+		
+	    <div>
+			<ul>   
+		 <li> Writing and pitching an individual recommendation to the COMEX of PublicisLive Paris about VIVATECH 2019 Paris’ exhibition</li>
+		 <li> Analysis of customer issues, writing and pitching of strategic recommendations as call for tenders for various projects with budget (up to 1M€) and timing restrictions (3 weeks to 1 month)  </li>
+		
+	  
+		</ul>
+	   </div>
+		   </div> 
+	</div>
+   </div>
+<div><br><br></div>
+&nbsp;<br> <br> <br>
+		
+<div class="col-lg-12 col-md-12">
+<div class="job"><a href="https://www.laperle-samui.com/#!"><p>La Perle Luxury Boutique Hotel – Koh Samui, Thailand</p> </a>
+           <br></div>
+	<div class="container">
+       <a href="https://www.laperle-samui.com/#!"><img src="https://static-ng.verychic.com/prod_img/OrchTO_27643/fr/xl/laperle_03.jpg" alt="La Perle Luxury Boutique" style="width:100%"></a>
+	   
+       <div class="content">
+		   <h3>Marketing Intern</h3> 		
+       <br>
+		 <p>
+	     <ul>   
+		 <li>Implementation of marketing and communication strategies: traffic up 200% over the period (+2000 likes)</li> 
+		 <li>Creation and editing of a promotional video published on the hotel's social networks (more than 4,000 visitors per month)  </li> 
+	     <li>Creation of an article for Bangkok Airways magazine and a map of the island: +6% of sales </li> 
+		</ul>
+	   </p>
+       </div>
+   </div>
+	</div> 
+	</div>
+	<br> <br>
+
+	
+	
+	&nbsp;
+<div><br><br><br><br><br><br><br><br><br><br> &nbsp;
+	</div>
+<div>&nbsp;  
+	</div>
+<div>&nbsp;  
+</div>
+<div>&nbsp;
+	</div>
+	
+<div class="footer">
+  <div id="colomn1">
+  	<img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.15752-9/p1080x2048/75481682_1350799838423182_7554892042539630592_n.jpg?_nc_cat=102&_nc_oc=AQldIVMWAAn_GmHgB5mPlcGQF8VOAIE3nZuSTvIsZ4o0MnNQEM4tZ2mOgafZ7D64MiA&_nc_ht=scontent-cdt1-1.xx&oh=de68090d4c03c9c608bee7aa3007ec70&oe=5E436012" alt="LeaPicture" width="100" height="100" class="avatar"></div>
+	<div id="colomn2">+33 6 68 42 77 53</div>
+	<div id="center">You want to know more about me ? Contact me at lea.fedida.bba@edhec.com</div>
+</div> 
+
+
+</body>
+</html>
